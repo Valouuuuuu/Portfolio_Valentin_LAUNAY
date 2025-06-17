@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compétences - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
   <nav>
@@ -19,119 +20,129 @@
   </nav>
 
   <section id="experience">
-    <h1 class="title">Mes compétences</h1>
+    <h1 class="title">Compétences pour l'UE 1 : Administrer</h1>
+    <h2>Je vais vous présenter les acquis que j’ai développés dans le cadre de la compétence Administrer les réseaux et l’Internet,
+       à travers différents apprentissages critiques</h2>
     <div class="experience-details-container">
       <div class="article-container ac11-container">
 
         <article class="ac11-article">
-          <h3>AC11.01 : Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.</h3>
+            <h3>AC11.01 : Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.</h3>
 
+            <p class="intro-critique">
+              <strong>Introduction :</strong> Cette compétence nous a permis de découvrir les fondements de l’électricité et de mieux comprendre leur application dans notre domaine d’étude, à travers différents modules techniques et scientifiques.
+            </p>
 
-          <p>
+            <p>
               Pendant tout le long de notre semestre, nous avons été introduits à différentes lois fondamentales de l’électricité, en particulier en basse tension.
               <br>Nous avons pu apprendre, par exemple, la loi d’Ohm, la loi des mailles, la loi des nœuds, les impédances, le modèle de Thévenin, ainsi que les différents types de filtres.
-          </p>
+            </p>
 
-          <p>
+            <p>
               Nous avons également étudié la logique combinatoire, notamment les opérations élémentaires.
-          </p>
+            </p>
 
-          <p>
+            <p>
               Toutes ces lois sont essentielles dans l’apprentissage de notre domaine — les réseaux et les télécommunications — car elles constituent les bases des technologies qui nous entourent, 
               qu’il s’agisse de nos ordinateurs ou de toute forme de transmission d’onde (Bluetooth, Wi-Fi, etc.).
-          </p>
+            </p>
 
+            <div class="carousel-wrapper">
+              <!-- Boutons de navigation -->
+              <input type="radio" name="carousel" id="img1" checked>
+              <input type="radio" name="carousel" id="img2">
+              <input type="radio" name="carousel" id="img3">
+              <input type="radio" name="carousel" id="img4">
 
-          
-          <P>R1.13 Mathématique du signal</P>
-          <p>R1.06 Architecture des systèmes numériques et informatiques</p>
-          <p>R1.14 Mathématiques des transmissions</p>
-          <div class="carousel-wrapper">
-
-            <!-- Boutons de navigation -->
-            <input type="radio" name="carousel" id="img1" checked>
-            <input type="radio" name="carousel" id="img2">
-            <input type="radio" name="carousel" id="img3">
-            <input type="radio" name="carousel" id="img4">
-
-            <!-- Conteneur principal -->
-            <div class="carousel-images">
-              <div class="carousel-image">
-                <img src="images/Administrer/Filtre.jpg" alt="Filtre" />
-                <label for="img4" class="prev">&#10094;</label>
-                <label for="img2" class="next">&#10095;</label>
-              </div>
-              <div class="carousel-image">
-                <img src="images/Administrer/Thévenin.jpg" alt="Thévenin" />
-                <label for="img1" class="prev">&#10094;</label>
-                <label for="img3" class="next">&#10095;</label>
-              </div>
-              <div class="carousel-image">
-                <img src="images/Administrer/logique_com.jpg" alt="Logique combinatoire" />
-                <label for="img2" class="prev">&#10094;</label>
-                <label for="img4" class="next">&#10095;</label>
-              </div>
-              <div class="carousel-image">
-                <img src="images/Administrer/logique_com2.jpg" alt="Logique combinatoire 2" />
-                <label for="img3" class="prev">&#10094;</label>
-                <label for="img1" class="next">&#10095;</label>
+              <!-- Conteneur principal -->
+              <div class="carousel-images">
+                <div class="carousel-image">
+                  <img src="images/Administrer/Filtre.jpg" alt="Filtre" />
+                  <label for="img4" class="prev">&#10094;</label>
+                  <label for="img2" class="next">&#10095;</label>
+                </div>
+                <div class="carousel-image">
+                  <img src="images/Administrer/Thévenin.jpg" alt="Thévenin" />
+                  <label for="img1" class="prev">&#10094;</label>
+                  <label for="img3" class="next">&#10095;</label>
+                </div>
+                <div class="carousel-image">
+                  <img src="images/Administrer/logique_com.jpg" alt="Logique combinatoire" />
+                  <label for="img2" class="prev">&#10094;</label>
+                  <label for="img4" class="next">&#10095;</label>
+                </div>
+                <div class="carousel-image">
+                  <img src="images/Administrer/logique_com2.jpg" alt="Logique combinatoire 2" />
+                  <label for="img3" class="prev">&#10094;</label>
+                  <label for="img1" class="next">&#10095;</label>
+                </div>
               </div>
             </div>
-          </div>
 
+            <p>
+              <strong>Conclusion :</strong> Grâce à cet apprentissage critique, j’ai acquis des bases solides en électricité et en logique, indispensables pour comprendre les équipements électroniques et les systèmes numériques que nous manipulons dans notre formation.
+              <br>Je suis désormais capable de mieux appréhender les circuits, les composants, et leurs fonctions, ce qui me sera utile dans les années à venir.
+            </p>
 
-
-
+            <!-- MODULES ASSOCIÉS -->
+            <div class="module-toggle-container">
+              <button onclick="toggleModules(this)">Voir les modules associés</button>
+              <ul class="module-list hidden">
+                <li>R1.13 : Mathématiques du signal</li>
+                <li>R1.06 : Architecture des systèmes numériques et informatiques</li>
+                <li>R1.14 : Mathématiques des transmissions</li>
+              </ul>
+            </div>
         </article>
 
-        <article class="ac11-article">
+
+       <article class="ac11-article">
           <h3>AC11.02 : Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et d’Internet.</h3>
 
-          
-          <p>
-              Pour développer cette Apprentissage Critique, il est essentiel de commencer par comprendre le fonctionnement de nos ordinateurs.
-              <br>Ce point a été abordé dans le module <strong>R1.06 : Architecture des systèmes numériques et informatiques</strong>, où nous avons appris comment un ordinateur fonctionne à un niveau bas, 
-              notamment à travers la logique combinatoire utilisant des 1 et des 0.
-              <br>Nous avons poursuivi cet apprentissage avec le module <strong>R1.14 : Mathématiques des transmissions</strong>, où nous avons découvert le fonctionnement des différents systèmes de codage 
-              (binaire, hexadécimal, décimal).
+          <p class="intro-critique">
+            <strong>Introduction :</strong> Cette compétence a été développée tout au long de l’année à travers des modules clés portant sur l’architecture des systèmes numériques, le codage, et le fonctionnement des réseaux et d’Internet.
           </p>
 
           <p>
-              Une fois ces compétences acquises, nous avons pu commencer à comprendre les bases des communications sur Internet, en étudiant le principe des trames et l'encapsulation des informations.
-              <br>Nous avons approfondi nos connaissances en analysant les trames pour identifier les différents protocoles de communication (TCP/IP).
-              <br>Toutes ces notions ont été abordées dans les modules <strong>R1.01 : Initiation aux réseaux informatiques</strong> et <strong>R1.02 : Principes et architecture des réseaux</strong>.
+            Pour développer cette Apprentissage Critique, il est essentiel de commencer par comprendre le fonctionnement de nos ordinateurs.
+            <br>Ce point a été abordé dans le module <strong>R1.06 : Architecture des systèmes numériques et informatiques</strong>, où nous avons appris comment un ordinateur fonctionne à un niveau bas, 
+            notamment à travers la logique combinatoire utilisant des 1 et des 0.
+            <br>Nous avons poursuivi cet apprentissage avec le module <strong>R1.14 : Mathématiques des transmissions</strong>, où nous avons découvert le fonctionnement des différents systèmes de codage 
+            (binaire, hexadécimal, décimal).
           </p>
 
           <p>
-              Lors du deuxième semestre, nous avons consolidé les acquis du premier semestre tout en découvrant de nouvelles compétences.
-              <br>Nous avons notamment été introduits au concept de routage avec le module <strong>R2.01 : Technologie de l’Internet</strong>, en étudiant le fonctionnement des routeurs, 
-              les principes du routage et du forwarding, ainsi que les protocoles RIP et OSPF.
-              <br>Nous avons également appris à configurer des routes statiques et étudié le principe de la subdivision de réseau, indispensable à la gestion des adresses IP aujourd’hui. 
-              <br>Ces notions ont été mises en pratique à travers des TD où nous avons simulé des situations proches de la réalité.
+            Une fois ces compétences acquises, nous avons pu commencer à comprendre les bases des communications sur Internet, en étudiant le principe des trames et l'encapsulation des informations.
+            <br>Nous avons approfondi nos connaissances en analysant les trames pour identifier les différents protocoles de communication (TCP/IP).
+            <br>Toutes ces notions ont été abordées dans les modules <strong>R1.01 : Initiation aux réseaux informatiques</strong> et <strong>R1.02 : Principes et architecture des réseaux</strong>.
           </p>
 
           <p>
-              Une autre notion importante abordée dans ce module est l’<strong>Internet Protocol Version 6 (IPv6)</strong>. 
-              <br>Nous avons eu l’opportunité de découvrir ce protocole, de comparer ses caractéristiques avec celles de son prédécesseur (IPv4), 
-              et de comprendre les spécificités liées à son fonctionnement, notamment dans la gestion des routes statiques.
-              <br>Enfin, nous avons appris la notion de fragmentation IP, une fonctionnalité largement utilisée aujourd’hui et qu’il est crucial de maîtriser.
+            Lors du deuxième semestre, nous avons consolidé les acquis du premier semestre tout en découvrant de nouvelles compétences.
+            <br>Nous avons notamment été introduits au concept de routage avec le module <strong>R2.01 : Technologie de l’Internet</strong>, en étudiant le fonctionnement des routeurs, 
+            les principes du routage et du forwarding, ainsi que les protocoles RIP et OSPF.
+            <br>Nous avons également appris à configurer des routes statiques et étudié le principe de la subdivision de réseau, indispensable à la gestion des adresses IP aujourd’hui. 
+            <br>Ces notions ont été mises en pratique à travers des TD où nous avons simulé des situations proches de la réalité.
           </p>
 
           <p>
-              Toutes ces connaissances ont également été mises en pratique lors des Travaux Pratiques en réseaux réalisés chaque vendredi.
+            Une autre notion importante abordée dans ce module est l’<strong>Internet Protocol Version 6 (IPv6)</strong>. 
+            <br>Nous avons eu l’opportunité de découvrir ce protocole, de comparer ses caractéristiques avec celles de son prédécesseur (IPv4), 
+            et de comprendre les spécificités liées à son fonctionnement, notamment dans la gestion des routes statiques.
+            <br>Enfin, nous avons appris la notion de fragmentation IP, une fonctionnalité largement utilisée aujourd’hui et qu’il est crucial de maîtriser.
           </p>
 
+          <p>
+            Toutes ces connaissances ont également été mises en pratique lors des Travaux Pratiques en réseaux réalisés chaque vendredi.
+          </p>
 
           <div class="carousel-wrapper carousel2">
-
-            <!-- Boutons de navigation uniques -->
             <input type="radio" name="carousel2" id="c2-img1" checked>
             <input type="radio" name="carousel2" id="c2-img2">
             <input type="radio" name="carousel2" id="c2-img3">
             <input type="radio" name="carousel2" id="c2-img4">
             <input type="radio" name="carousel2" id="c2-img5">
 
-            <!-- Conteneur principal -->
             <div class="carousel-images">
               <div class="carousel-image">
                 <img src="images/Administrer/SujectTD1.jpg" alt="Sujet TD1" />
@@ -161,50 +172,64 @@
             </div>
           </div>
 
+          <p>
+            <strong>Conclusion :</strong> cette compétence m’a permis de comprendre en profondeur l'architecture des réseaux et les principes fondamentaux du codage et des communications numériques. 
+            <br>Grâce à des modules complémentaires et à une mise en pratique régulière, je suis aujourd’hui capable de concevoir, interpréter et analyser des architectures réseau simples à intermédiaires.
+          </p>
 
-
+          <!-- MODULES ASSOCIÉS -->
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R1.01 : Initiation aux réseaux informatiques</li>
+              <li>R1.02 : Principes et architecture des réseaux</li>
+              <li>R1.06 : Architecture des systèmes numériques et informatiques</li>
+              <li>R1.14 : Mathématiques des transmissions</li>
+              <li>R2.01 : Technologie de l’Internet</li>
+            </ul>
+          </div>
         </article>
+
 
         <article class="ac11-article">
           <h3>AC11.03 : Configurer les fonctions de base d’un réseau local.</h3>
 
-          <p>
-              Tout d’abord, nous avons pu acquérir et développer des compétences théoriques à travers les modules 
-              <strong>R1.01 : Initiation aux réseaux informatiques</strong>, 
-              <strong>R1.02 : Principes et architecture des réseaux</strong>, 
-              et <strong>R1.03 : Réseaux locaux et équipements actifs</strong>.
-              <br>Ces modules nous ont permis d’aborder les bases des réseaux, comme le fonctionnement des trames ou encore le modèle OSI. 
-              <br>Dans le module R1.03, nous sommes allés plus loin en découvrant les notions de topologies de réseau, de domaine de collision, ainsi que le fonctionnement des tables de commutation.
-              <br>En résumé, nous avons commencé avec des réseaux centrés sur les commutateurs, puis avons progressivement intégré les routeurs pour concevoir des réseaux plus complexes.
+          <p class="intro-critique">
+            <strong>Introduction :</strong> Cette compétence m’a permis de découvrir les bases de la configuration réseau, à travers de nombreux projets pratiques et l'apprentissage des protocoles essentiels au bon fonctionnement d’un réseau local.
           </p>
 
           <p>
-              Comme pour tous les cours de réseaux, notre apprentissage a été renforcé par des <strong>travaux pratiques</strong>, qui nous ont permis de mettre en œuvre les connaissances théoriques acquises.
+            Tout d’abord, nous avons pu acquérir et développer des compétences théoriques à travers les modules 
+            <strong>R1.01 : Initiation aux réseaux informatiques</strong>, 
+            <strong>R1.02 : Principes et architecture des réseaux</strong>, 
+            et <strong>R1.03 : Réseaux locaux et équipements actifs</strong>.
+            <br>Ces modules nous ont permis d’aborder les bases des réseaux, comme le fonctionnement des trames ou encore le modèle OSI. 
+            <br>Dans le module R1.03, nous sommes allés plus loin en découvrant les notions de topologies de réseau, de domaine de collision, ainsi que le fonctionnement des tables de commutation.
+            <br>En résumé, nous avons commencé avec des réseaux centrés sur les commutateurs, puis avons progressivement intégré les routeurs pour concevoir des réseaux plus complexes.
           </p>
 
           <p>
-              Par exemple, nous avons découvert en TD le principe du protocole <strong>Spanning Tree</strong>, que nous avons ensuite mis en pratique pour mieux comprendre son utilité et son fonctionnement.
-              <br>Nous avons également étudié le protocole <strong>VTP</strong> (VLAN Trunking Protocol), qui permet une gestion centralisée des VLAN au sein d’un réseau.
+            Comme pour tous les cours de réseaux, notre apprentissage a été renforcé par des <strong>travaux pratiques</strong>, qui nous ont permis de mettre en œuvre les connaissances théoriques acquises.
           </p>
 
           <p>
-              Toutes ces connaissances ont pu être mises en application et approfondies dans le cadre de la <strong>SAÉ 1.02 : S’initier aux réseaux informatiques</strong>. 
-              <br>L’objectif de ce projet était de concevoir un petit réseau d’entreprise en intégrant un commutateur et un routeur.
-              <br>Nous avons mis en place le service <strong>DHCP</strong> pour l’attribution automatique des adresses IP, réalisé du <strong>routage inter-VLAN</strong> via notre routeur, 
-              et utilisé le protocole <strong>VTP</strong> pour gérer nos VLAN à l’aide d’un second commutateur de secours.
+            Par exemple, nous avons découvert en TD le principe du protocole <strong>Spanning Tree</strong>, que nous avons ensuite mis en pratique pour mieux comprendre son utilité et son fonctionnement.
+            <br>Nous avons également étudié le protocole <strong>VTP</strong> (VLAN Trunking Protocol), qui permet une gestion centralisée des VLAN au sein d’un réseau.
           </p>
 
-            
-           <div class="carousel-wrapper carousel3">
+          <p>
+            Toutes ces connaissances ont pu être mises en application et approfondies dans le cadre de la <strong>SAÉ 1.02 : S’initier aux réseaux informatiques</strong>. 
+            <br>L’objectif de ce projet était de concevoir un petit réseau d’entreprise en intégrant un commutateur et un routeur.
+            <br>Nous avons mis en place le service <strong>DHCP</strong> pour l’attribution automatique des adresses IP, réalisé du <strong>routage inter-VLAN</strong> via notre routeur, 
+            et utilisé le protocole <strong>VTP</strong> pour gérer nos VLAN à l’aide d’un second commutateur de secours.
+          </p>
 
-            <!-- Boutons de navigation uniques -->
+          <div class="carousel-wrapper carousel3">
             <input type="radio" name="carousel3" id="c3-img1" checked>
             <input type="radio" name="carousel3" id="c3-img2">
             <input type="radio" name="carousel3" id="c3-img3">
             <input type="radio" name="carousel3" id="c3-img4">
             <input type="radio" name="carousel3" id="c3-img5">
-
-            <!-- Conteneur principal -->
             <div class="carousel-images">
               <div class="carousel-image">
                 <img src="images/Administrer/Spanning-tree-1.PNG" alt="Spanning Tree 1" />
@@ -234,15 +259,10 @@
             </div>
           </div>
 
-
           <div class="carousel-wrapper carousel4">
-            
-            <!-- Boutons de navigation uniques -->
             <input type="radio" name="carousel4" id="c4-img1" checked>
             <input type="radio" name="carousel4" id="c4-img2">
             <input type="radio" name="carousel4" id="c4-img3">
-
-            <!-- Conteneur principal -->
             <div class="carousel-images">
               <div class="carousel-image">
                 <img src="images/Administrer/SAE102-1.PNG" alt="SAE102-1" />
@@ -263,126 +283,158 @@
           </div>
 
           <p>
-              Lors du second semestre, nous avons poursuivi notre apprentissage des réseaux en approfondissant la compréhension des routeurs : leur fonctionnement, 
-              les spécificités des protocoles de routage, ainsi que leur configuration pour permettre la communication entre plusieurs réseaux.
-              <br>Nous avons effectué de nombreux travaux pratiques, notamment sur <strong>Cisco Packet Tracer</strong>, afin de bien assimiler le rôle des routeurs. 
-              Toutes ces notions ont été abordées dans le module <strong>R2.01 : Technologie de l’Internet</strong>.
+            Lors du second semestre, nous avons poursuivi notre apprentissage des réseaux en approfondissant la compréhension des routeurs : leur fonctionnement, 
+            les spécificités des protocoles de routage, ainsi que leur configuration pour permettre la communication entre plusieurs réseaux.
+            <br>Nous avons effectué de nombreux travaux pratiques, notamment sur <strong>Cisco Packet Tracer</strong>, afin de bien assimiler le rôle des routeurs. 
+            Toutes ces notions ont été abordées dans le module <strong>R2.01 : Technologie de l’Internet</strong>.
           </p>
 
-
-              <img src="images/Administrer/R201-1.PNG" alt="Simulation routeur R2.01" />
-
+          <img src="images/Administrer/R201-1.PNG" alt="Simulation routeur R2.01" class="img-fixe" />
 
           <p>
-              Nous avons également mené un projet dans le cadre de la <strong>SAÉ 2.01 : Construire un réseau</strong>, réalisé sur le logiciel de simulation <strong>GNS3</strong>. 
-              Ce logiciel permet l’intégration de fichiers ISO pour simuler différents systèmes d’exploitation sur des ordinateurs, commutateurs ou routeurs virtuels.
+            Nous avons également mené un projet dans le cadre de la <strong>SAÉ 2.01 : Construire un réseau</strong>, réalisé sur le logiciel de simulation <strong>GNS3</strong>. 
+            Ce logiciel permet l’intégration de fichiers ISO pour simuler différents systèmes d’exploitation sur des ordinateurs, commutateurs ou routeurs virtuels.
           </p>
 
           <p>
-              L’objectif de ce projet était de concevoir une simulation de réseau d’entreprise en y intégrant plusieurs services :
-              <br>– Un serveur DHCP (déjà utilisé lors de la SAÉ du premier semestre) ;  
-              <br>– Un serveur FTP ;  
-              <br>– Un serveur web basé sur Apache.
+            L’objectif de ce projet était de concevoir une simulation de réseau d’entreprise en y intégrant plusieurs services :
+            <br>– Un serveur DHCP ;  
+            <br>– Un serveur FTP ;  
+            <br>– Un serveur web basé sur Apache.
           </p>
 
           <p>
-              Nous avons également mis en place le protocole de routage <strong>RIP</strong> afin de faciliter la communication entre les routeurs, sans avoir à configurer manuellement 
-              des routes statiques pour chacun.
-              <br>J’ai aussi implémenté le protocole <strong>VTP</strong> pour assurer une gestion centralisée des VLANs que j'avais créés.
+            Nous avons également mis en place le protocole de routage <strong>RIP</strong> afin de faciliter la communication entre les routeurs, sans avoir à configurer manuellement des routes statiques pour chacun.
+            <br>J’ai aussi implémenté le protocole <strong>VTP</strong> pour assurer une gestion centralisée des VLANs que j'avais créés.
           </p>
 
           <p>
-              Un autre point important fut la mise en place de <strong>Listes de Contrôle d’Accès (ACL)</strong>, qui m'ont permis de commencer à sécuriser le réseau en définissant des règles précises d’accès.
-              <br>Dans cette optique de sécurité, j’ai également activé la fonctionnalité <strong>port-security</strong> sur les commutateurs pour limiter les connexions non autorisées.
+            Un autre point important fut la mise en place de <strong>Listes de Contrôle d’Accès (ACL)</strong>, qui m'ont permis de commencer à sécuriser le réseau en définissant des règles précises d’accès.
+            <br>Dans cette optique de sécurité, j’ai également activé la fonctionnalité <strong>port-security</strong> sur les commutateurs pour limiter les connexions non autorisées.
           </p>
 
           <p>
-              Grâce à ce projet, nous avons pu consolider nos compétences en réseau tout en explorant un large éventail de notions pratiques et techniques.
+            Grâce à ce projet, nous avons pu consolider nos compétences en réseau tout en explorant un large éventail de notions pratiques et techniques.
           </p>
+
+          <img src="images/Administrer/GNS3-projet.png" alt="Simulation GNS3 projet" class="img-fixe" />
 
           <p>
-              <strong>Conclusion :</strong> si je dois établir un bilan pour cette Apprentissage Critique, je considère avoir acquis l’ensemble des compétences demandées, 
-              grâce aux nombreux travaux pratiques, projets et cours théoriques. 
-              <br>Toutes les notions abordées dans cette AC m’ont paru claires et ne m’ont pas posé de difficulté particulière.
+            <strong>Conclusion :</strong> si je dois établir un bilan pour cette Apprentissage Critique, je considère avoir acquis l’ensemble des compétences demandées, 
+            grâce aux nombreux travaux pratiques, projets et cours théoriques. 
+            <br>Toutes les notions abordées dans cette AC m’ont paru claires et ne m’ont pas posé de difficulté particulière.
           </p>
 
-
-              PHOTO GNS3 
-        
-          </article>
-
-        <article class="ac11-article">
-          <h3>AC11.04 : Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec eux pour la configuration et l’administration des réseaux et services fournis.</h3>
-          <p>
-              Lors du premier semestre, nous avons été introduits à deux systèmes d’exploitation, dont nous avons étudié les bases : leur fonctionnement, les commandes essentielles, 
-              ainsi que leurs spécificités respectives.
-              <br>Nous avons ainsi appris à utiliser <strong>Windows 10</strong> et <strong>Linux</strong> (distribution Debian). 
-              <br>Toutes ces notions ont été abordées dans le module <strong>R1.08 : Bases des systèmes d’exploitation</strong>.
-          </p>
-
-          <p>
-              Pendant le deuxième semestre, nous avons acquis des compétences en <strong>administration système</strong> à l’aide d’outils de virtualisation, principalement sur des environnements Linux.
-              <br>Ces compétences ont été développées dans le module <strong>R2.02 : Administration système et fondamentaux de la virtualisation</strong>.
-              <br>Au cours de ce module, nous avons mené plusieurs travaux pratiques sur différents systèmes de virtualisation comme <strong>Gnome Boxes, Docker, KVM, Xen</strong> ou encore <strong>libvirsh</strong>.
-          </p>
-
-          <p>
-              Toujours au deuxième semestre, nous avons également suivi une série de 3 à 4 travaux pratiques consacrés au système d’exploitation <strong>pfSense</strong>.
-              <br>Nous avons eu l’occasion de configurer des <strong>règles de pare-feu</strong>, d’explorer les possibilités de <strong>NAT</strong> offertes par le système, 
-              et de mettre en place de la <strong>redirection de port</strong>.
-              <br>La maîtrise d’un système d’exploitation de type routeur comme pfSense est essentielle pour l’administration réseau, car c’est le point central par lequel transite tout le trafic Internet.
-          </p>
-
-          <p>
-              <strong>Je pense personnellement</strong> que cet Apprentissage Critique est celui que je maîtrise le mieux, grâce aux connaissances de base que j’ai pu accumuler par mon travail personnel, 
-              ainsi qu’aux apports directs des modules suivis durant l’année.
-          </p>
-
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R1.01 : Initiation aux réseaux informatiques</li>
+              <li>R1.02 : Principes et architecture des réseaux</li>
+              <li>R1.03 : Réseaux locaux et équipements actifs</li>
+              <li>R2.01 : Technologie de l’Internet</li>
+              <li>SAÉ 1.02 : S’initier aux réseaux informatiques</li>
+              <li>SAÉ 2.01 : Construire un réseau</li>
+            </ul>
+          </div>
         </article>
+
+
+       <article class="ac11-article">
+          <h3>AC11.05 : Identifier les dysfonctionnements du réseau local et savoir les signaler ou intervenir.</h3>
+
+          <p class="intro-critique">
+             <strong>Introduction :</strong>Pour devenir un technicien réseau efficace, il est essentiel de savoir identifier, diagnostiquer et résoudre les dysfonctionnements. Cela suppose une compréhension des outils de test, des services réseau, et une méthode rigoureuse pour localiser l’origine d’un problème.
+          </p>
+
+          <p>
+            Lors de nos différents travaux pratiques et projets/SAÉ, j’ai été confronté à plusieurs dysfonctionnements sur divers environnements. 
+            Nous avons souvent dû trouver des solutions par nous-mêmes, notamment dans les projets où nous étions moins guidés, ce qui a exigé de l’autonomie et de la rigueur.
+          </p>
+
+          <p>
+            Si je devais donner un exemple concret, ce serait la <strong>SAÉ 2.01 : Construire un réseau</strong>, où j’ai rencontré de nombreux problèmes avec le logiciel <strong>GNS3</strong>. 
+            J’ai notamment eu des difficultés liées à la mise en place du NAT pour l’interconnexion entre ma maquette et le réseau extérieur, ainsi que des dysfonctionnements sur le protocole de routage RIP.
+          </p>
+
+          <p>
+            Un autre exemple serait la <strong>SAÉ 1.02 : S’initier aux réseaux informatiques</strong>, dans laquelle j’ai rencontré plusieurs problèmes lors de la configuration du serveur DHCP. 
+            De manière générale, de nombreux travaux pratiques ont également été l’occasion de faire face à des dysfonctionnements techniques variés.
+          </p>
+
+          <p>
+            Pour résoudre ces problèmes, j’ai mis en place une méthode progressive : réduire petit à petit le périmètre afin d’identifier précisément la source du dysfonctionnement.
+            Par exemple, dans la SAE 2.01, pour comprendre pourquoi le protocole RIP ne fonctionnait pas, j’ai effectué des <strong>tests de connectivité (ping)</strong> entre les équipements, 
+            en partant de celui le plus proche jusqu’à la destination finale. Cette approche m’a permis d’identifier rapidement l’équipement réseau en cause.
+          </p>
+
+          <p>
+            <strong>Conclusion :</strong> Cet Apprentissage Critique m’a permis de développer ma capacité à diagnostiquer des pannes réseau, à raisonner méthodiquement et à agir avec autonomie. 
+            Grâce aux projets pratiques et aux modules techniques, je me sens désormais plus à l’aise pour analyser et résoudre les dysfonctionnements rencontrés dans un environnement réseau réel.
+          </p>
+
+          <div class="module-toggle-container">
+            <button class="toggle-modules" onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R1.01 : Initiation aux réseaux informatiques</li>
+              <li>R1.02 : Principes et architecture des réseaux</li>
+              <li>R1.03 : Réseaux locaux et équipements actifs</li>
+              <li>R2.01 : Technologie de l'internet</li>
+              <li>R2.03 : Bases des services réseaux</li>
+              <li>SAÉ 1.02 : S’initier aux réseaux informatiques</li>
+              <li>SAÉ 2.01 : Construire un réseau</li>
+            </ul>
+          </div>
+        </article>
+
+
+
 
         <article class="ac11-article">
           <h3>AC11.05 : Identifier les dysfonctionnements du réseau local et savoir les signaler ou intervenir.</h3>
-          <p></p>
-          <p>R1.01 Initiation aux réseaux informatiques</p>
-          <p>R1.02 Principes et architecture des réseaux</p>
-          <P>R1.03 : Réseaux locaux et équipements actifs</P>
-          <p>R2.01 : Technologie de l'internet</p>
-          <p>R2.03 : Bases des services réseaux</p>
 
-
-          <p>SAÉ1.02 - S’initier aux réseaux informatiques</p>
-          <p>SAE2.01 Construire un réseau</p>
-
-
-
-
-          <p>
-              Lors de nos différents travaux pratiques et projets/SAÉ, j’ai été confronté à plusieurs dysfonctionnements sur divers environnements. 
-              <br>Nous avons souvent dû trouver des solutions par nous-mêmes, notamment dans les projets où nous étions moins guidés, ce qui a exigé de l’autonomie et de la rigueur.
+          <p class="intro-critique">
+             <strong>Introduction :</strong>Être capable de diagnostiquer et résoudre des problèmes réseau est une compétence fondamentale dans le domaine des réseaux et télécommunications. Elle nécessite une bonne connaissance des protocoles, une méthode rigoureuse, et l’usage d’outils adaptés pour identifier efficacement l'origine des dysfonctionnements.
           </p>
 
           <p>
-              Si je devais donner un exemple concret, ce serait la <strong>SAÉ 2.01 : Construire un réseau</strong>, où j’ai rencontré de nombreux problèmes avec le logiciel <strong>GNS3</strong>. 
-              <br>J’ai notamment eu des difficultés liées à la mise en place du NAT pour l’interconnexion entre ma maquette et le réseau extérieur, ainsi que des dysfonctionnements sur le protocole de routage RIP, 
-              qui refusait de fonctionner correctement.
+            Lors de nos différents travaux pratiques et projets/SAÉ, j’ai été confronté à plusieurs dysfonctionnements sur divers environnements. 
+            Nous avons souvent dû trouver des solutions par nous-mêmes, notamment dans les projets où nous étions moins guidés, ce qui a exigé de l’autonomie et de la rigueur.
           </p>
 
           <p>
-              Un autre exemple serait la <strong>SAÉ 1.02 : S’initier aux réseaux informatiques</strong>, dans laquelle j’ai rencontré plusieurs problèmes lors de la configuration du serveur DHCP. 
-              <br>De manière générale, de nombreux travaux pratiques ont également été l’occasion de faire face à des dysfonctionnements techniques variés.
+            Si je devais donner un exemple concret, ce serait la <strong>SAÉ 2.01 : Construire un réseau</strong>, où j’ai rencontré de nombreux problèmes avec le logiciel <strong>GNS3</strong>. 
+            J’ai notamment eu des difficultés liées à la mise en place du NAT pour l’interconnexion entre ma maquette et le réseau extérieur, ainsi que des dysfonctionnements sur le protocole de routage RIP, 
+            qui refusait de fonctionner correctement.
           </p>
 
           <p>
-              Pour résoudre ces problèmes, j’ai mis en place une méthode progressive : réduire petit à petit le périmètre afin d’identifier précisément la source du dysfonctionnement.
-              <br>Par exemple, dans la SAE 2.01, pour comprendre pourquoi le protocole RIP ne fonctionnait pas, j’ai effectué des <strong>tests de connectivité (ping)</strong> entre les équipements, 
-              en partant de celui le plus proche jusqu’à la destination finale. Cette approche m’a permis d’identifier rapidement l’équipement réseau en cause.
+            Un autre exemple serait la <strong>SAÉ 1.02 : S’initier aux réseaux informatiques</strong>, dans laquelle j’ai rencontré plusieurs problèmes lors de la configuration du serveur DHCP. 
+            De manière générale, de nombreux travaux pratiques ont également été l’occasion de faire face à des dysfonctionnements techniques variés.
           </p>
 
           <p>
-              <strong>Pour conclure</strong> sur cette Apprentissage Critique, je pense qu’au fil de l’année, j’ai acquis de l’expérience dans l’identification et la gestion de dysfonctionnements. 
-              <br>J’ai également appris les bases essentielles de la résolution de problèmes en environnement réseau et système.
+            Pour résoudre ces problèmes, j’ai mis en place une méthode progressive : réduire petit à petit le périmètre afin d’identifier précisément la source du dysfonctionnement.
+            Par exemple, dans la SAE 2.01, pour comprendre pourquoi le protocole RIP ne fonctionnait pas, j’ai effectué des <strong>tests de connectivité (ping)</strong> entre les équipements, 
+            en partant de celui le plus proche jusqu’à la destination finale. Cette approche m’a permis d’identifier rapidement l’équipement réseau en cause.
           </p>
 
+          <p>
+            <strong>Conclusion :</strong> cet Apprentissage Critique m’a permis de développer ma capacité à diagnostiquer des pannes réseau, à raisonner méthodiquement et à intervenir de manière ciblée. 
+            Grâce aux projets pratiques et aux modules techniques, je me sens désormais plus à l’aise pour analyser et résoudre les dysfonctionnements rencontrés dans un environnement réseau réel.
+          </p>
+
+          <div class="module-toggle-container">
+            <button class="toggle-modules" onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R1.01 : Initiation aux réseaux informatiques</li>
+              <li>R1.02 : Principes et architecture des réseaux</li>
+              <li>R1.03 : Réseaux locaux et équipements actifs</li>
+              <li>R2.01 : Technologie de l'internet</li>
+              <li>R2.03 : Bases des services réseaux</li>
+              <li>SAÉ 1.02 : S’initier aux réseaux informatiques</li>
+              <li>SAÉ 2.01 : Construire un réseau</li>
+            </ul>
+          </div>
         </article>
 
       </div>

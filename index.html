@@ -73,15 +73,9 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+    
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Compétences</h1>
 
       <div class="experience-columns">
@@ -173,12 +167,7 @@
         </div>
       </div>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+    
     </section>
 
 
@@ -187,95 +176,176 @@
     <section id="projects">
       <h1 class="title">Projets</h1>
 
-
-
-
-
       <!-- UE 1 : Administrer -->
       <div class="ue-container">
         <h2 class="ue-title">Unité d’enseignement : Administrer</h2>
-        <div class="sae-grid">
-          <!-- Colonne 1 -->
-          <div class="sae-column">
-            <a href="#sae102">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Administrer/SAE102-1.PNG" alt="SAE 1.02" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 1.02 : S’initier aux réseaux informatiques</h2>
-              </div>
-            </a>
-          </div>
+        <div class="sae-horizontal">
 
-          <!-- Colonne 2 -->
-          <div class="sae-column">
-            <a href="#sae201">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Administrer/R201-1.PNG" alt="SAE 2.01" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 2.01 : Construire un réseau</h2>
+          <!-- SAÉ 1.02 -->
+          <a href="#sae102" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Administrer/SAE102-1.PNG" alt="SAE 1.02" class="project-img img-small" />
               </div>
-            </a>
-          </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.02 : S’initier aux réseaux informatiques</h2>
+              <div class="hover-description-below">
+                <p>
+                  Cette SAÉ avait pour objectif de nous faire découvrir les bases de la conception et de la configuration d’un réseau informatique local. 
+                  Le projet consistait à créer une infrastructure réseau pour une petite entreprise, incluant un routeur, plusieurs commutateurs, 
+                  et des postes clients organisés en VLAN.
+                </p>
+                <p>
+                  J’ai mis en œuvre des services fondamentaux comme le <strong>DHCP</strong> pour l’attribution automatique d’adresses IP, 
+                  le <strong>routage inter-VLAN</strong> pour permettre la communication entre différents départements, 
+                  et le protocole <strong>VTP</strong> pour la gestion centralisée des VLAN. 
+                </p>
+                <p>
+                  L’objectif pédagogique était de comprendre l’architecture d’un réseau local, les mécanismes de communication interne, 
+                  ainsi que les bonnes pratiques de configuration pour garantir un réseau fonctionnel, évolutif et sécurisé. 
+                  Ce projet a joué un rôle clé dans l’ancrage de mes premières compétences pratiques en réseau.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- SAÉ 2.01 -->
+          <a href="#sae201" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Administrer/" alt="SAE 2.01" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 2.01 : Construire un réseau</h2>
+              <div class="hover-description-below">
+                <p>
+                  Ce projet visait à concevoir une infrastructure réseau complète pour une entreprise fictive. 
+                  Nous avons utilisé le simulateur <strong>GNS3</strong> pour configurer routeurs, commutateurs et services réseau.
+                </p>
+                <p>
+                  J’ai mis en œuvre un serveur <strong>DHCP</strong>, un serveur <strong>FTP</strong> pour l’échange de fichiers, 
+                  un serveur web <strong>Apache</strong>, ainsi qu’un <strong>routage dynamique (RIP)</strong> entre les routeurs.
+                </p>
+                <p>
+                  J’ai aussi configuré des <strong>ACL (listes de contrôle d’accès)</strong> pour sécuriser le trafic, 
+                  ainsi que la <strong>port-security</strong> pour éviter les connexions non autorisées.
+                </p>
+                <p>
+                  Ce projet m’a permis de maîtriser les services essentiels au sein d’un réseau d’entreprise et d’approfondir mes compétences en administration réseau.
+                </p>
+              </div>
+            </div>
+          </a>
+
+
         </div>
       </div>
 
       <!-- UE 2 : Connecter -->
       <div class="ue-container">
         <h2 class="ue-title">Unité d’enseignement : Connecter</h2>
-        <div class="sae-grid">
-          <div class="sae-column">
-            <a href="#sae103">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Connecter/SAE1030.png" alt="SAE 1.03" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 1.03 : Mesurer et analyser des signaux</h2>
+        <div class="sae-horizontal">
+
+          <!-- SAÉ 1.03 -->
+          <!-- SAÉ 1.03 : Mesurer et analyser des signaux -->
+          <a href="#sae103" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Connecter/SAE1030.png" alt="SAE 1.03" class="project-img" />
               </div>
-            </a>
-          </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.03 : Mesurer et analyser des signaux</h2>
+              <div class="hover-description-below">
+                <p>
+                  Dans le cadre de cette SAÉ, notre mission consistait à mettre en place un support de transmission réel : un réseau Wi-Fi à l’aide d’un routeur physique. 
+                  Le projet s’est articulé autour de la fabrication d’un câble RJ45 selon la norme TSB 568B, de l’installation matérielle du routeur et de tests de connectivité.
+                </p>
+                <p>
+                  Nous avons ensuite mesuré la couverture du signal Wi-Fi à différents endroits, en analysant l’atténuation provoquée par les murs ou la distance. 
+                  Ces données ont été collectées pour cartographier la qualité du signal dans un environnement réel.
+                </p>
+                <p>
+                  Un rapport complet a été rédigé pour présenter notre méthode, nos résultats, ainsi que les solutions envisagées pour optimiser la couverture. 
+                  Ce projet nous a initiés aux contraintes physiques d’un réseau sans fil, de la théorie à la pratique.
+                </p>
+              </div>
+            </div>
+          </a>
+
         </div>
       </div>
 
       <!-- UE 3 : Programmer -->
       <div class="ue-container">
         <h2 class="ue-title">Unité d’enseignement : Programmer</h2>
-        <div class="sae-grid">
-          <!-- Colonne 1 -->
-          <div class="sae-column">
-            <a href="#sae104">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Programmer/sae14-1.PNG" alt="SAE 1.04" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 1.04 : Se présenter sur Internet</h2>
-              </div>
-            </a>
-            <a href="#sae203">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Programmer/sae203-1.png" alt="SAE 2.03" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 2.03 : Mettre en place une solution informatique</h2>
-              </div>
-            </a>
-          </div>
+        <div class="sae-horizontal">
 
-          <!-- Colonne 2 -->
-          <div class="sae-column">
-            <a href="#sae105">
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img src="images/Programmer/SAE_1.05_appli2.png" alt="SAE 1.05" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">SAÉ 1.05 : Traiter des données</h2>
+          <!-- SAÉ 1.04 -->
+          <a href="#sae104" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/sae14-1.PNG" alt="SAE 1.04" class="project-img" />
               </div>
-            </a>
-          </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.04 : Se présenter sur Internet</h2>
+              <div class="hover-description-below">
+                <p>
+                  Cette SAÉ avait pour objectif de nous apprendre à créer une page web personnelle. 
+                  À l’aide du HTML et du CSS, j’ai construit un site simple, structuré et responsive, mettant en avant mes compétences et mes centres d’intérêt.
+                </p>
+                <p>
+                  L’objectif pédagogique était de maîtriser les bases du développement web et de savoir produire un contenu numérique propre et valorisant, 
+                  destiné à être consulté par des recruteurs ou partenaires professionnels.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- SAÉ 1.05 -->
+          <a href="#sae105" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/SAE_1.05_appli2.png" alt="SAE 1.05" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.05 : Traiter des données</h2>
+              <div class="hover-description-below">
+                <p>
+                  Le but de cette SAÉ était de créer une application capable de lire, trier et analyser des fichiers de données structurés. 
+                  En utilisant le langage Python, j’ai développé un programme traitant des fichiers CSV afin d’en extraire des statistiques pertinentes.
+                </p>
+                <p>
+                  Ce projet m’a permis de comprendre les étapes de manipulation de données, de l’importation au traitement, 
+                  et de développer des compétences en algorithmique et en lecture de fichiers.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- SAÉ 2.03 -->
+          <a href="#sae203" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/sae203-1.png" alt="SAE 2.03" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 2.03 : Mettre en place une solution informatique</h2>
+              <div class="hover-description-below">
+                <p>
+                  Ce projet avait pour finalité de concevoir une application web complète à l’aide du framework Django. 
+                  L’application devait gérer des entités liées à un cas d’usage simulé (ex : gestion de commandes, d’utilisateurs, etc.).
+                </p>
+                <p>
+                  Nous avons aussi appris à utiliser une base de données relationnelle (SQLite ou PostgreSQL), 
+                  à structurer des vues dynamiques en HTML, et à appliquer les principes du modèle MVC.
+                </p>
+                <p>
+                  Le projet nous a aussi initiés au déploiement sur un serveur Linux. Il m’a permis d’appréhender le développement back-end, 
+                  et de comprendre les interactions entre interface, logique métier, et base de données.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
+
+
+
 
 
 
@@ -287,7 +357,6 @@
 
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">

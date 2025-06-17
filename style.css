@@ -305,6 +305,32 @@ section {
   justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  width: 100%; /* important pour que le max-width fonctionne bien dans le flex */
+  box-sizing: border-box;
+  min-height: 550px; /* Ajuste selon ton besoin visuel */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sae-horizontal .details-container.color-container {
+  min-height: 350px; /* ↘ Réduction de la hauteur */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-small {  
+  max-height: 130px;
+}
+
+.project-img {
+  max-height: 200px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -317,6 +343,19 @@ section {
 
 
 
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem; /* ✅ Ajoute un espace sous le h1 */
+}
+
+.title + h2 {
+  margin-top: 1rem; /* ✅ Double sécurité au cas où h1 a déjà une marge */
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2rem;
+}
 
 
 
@@ -341,7 +380,7 @@ section {
 
 
 .details-container.color-container {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .details-container.color-container:hover {
@@ -1198,5 +1237,199 @@ footer p {
   gap: 2rem;
   flex: 1 1 300px;
   max-width: 400px;
+}
+
+.sae-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sae-horizontal a {
+  text-decoration: none;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+
+.img-fixe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+
+
+.intro-critique {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.module-toggle-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.module-toggle-container button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.module-toggle-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.module-list {
+  margin-top: 1rem;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.module-list.hidden {
+  display: none;
+}
+
+
+.intro-critique {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.module-toggle-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.module-toggle-container button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.module-toggle-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.module-list {
+  margin-top: 1rem;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.module-list.hidden {
+  display: none;
+}
+
+
+
+.project-hover-card {
+  position: relative;
+  display: block;
+  overflow: visible; /* très important */
+}
+
+.article-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-hover-card:hover .hover-description {
+  opacity: 1;
+}
+
+.project-hover-card .hover-description-below {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  font-size: 0.9rem;
+  color: #333;
+  padding: 0 0.8rem;
+}
+
+.project-hover-card:hover .hover-description-below {
+  max-height: 150px; /* Suffisant pour ~5 lignes */
+  opacity: 1;
+  display: block;
+}
+
+
+
+
+
+.hover-description-below {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.project-hover-card:hover .hover-description-below {
+  max-height: 1000px; /* ou la valeur que tu veux selon la longueur du texte */
+}
+
+
+.project-hover-card:hover .details-container {
+  transform: scale(1.1, 1.06); /* 1.03 en largeur, 1.06 en hauteur */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.hover-description-below {
+  font-size: 0.8rem; /* ou 0.8rem si tu veux encore plus petit */
+  line-height: 1.4;
+}
+
+.sae-horizontal a {
+  flex: 1 1 360px;       /* largeur minimale plus large */
+  max-width: 460px;      /* largeur maximale élargie */
+}
+
+.details-container.color-container {
+  width: 100%;
+  max-width: 460px;      /* même valeur que ci-dessus pour cohérence */
+  box-sizing: border-box;
 }
 

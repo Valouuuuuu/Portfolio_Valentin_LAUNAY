@@ -1,0 +1,1202 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;  /* Carré de 400x400 pixels */
+  width: 400px;
+  margin: auto 0;
+  overflow: hidden; /* Optionnel */
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Conserve les proportions */
+  border-radius: 350px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+section {
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  height: auto; /* ✅ change de 96vh à auto */
+}
+
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+
+.ue-container {
+  border: 2px solid #ccc;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background-color: #fafafa;
+}
+
+.ue-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.sae-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* ou space-between pour répartir proprement */
+  gap: 2rem;
+}
+
+
+
+.details-container.color-container {
+  flex: 1 1 300px;         /* prend plus de place, minimum 300px */
+  max-width: 100%;
+  height: auto;            /* ne pas forcer la hauteur fixe */
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+
+
+.details-container.color-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.article-container {
+  display: flex;
+  flex-direction: column; /* force l'affichage en pile */
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.project-img {
+  max-width: 100%; /* ou 100% si tu veux remplir toute la largeur */
+  max-height: 90vw; /* ↑ augmente la hauteur max de l’image */
+  object-fit: contain;
+}
+
+
+
+.details-container.color-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-container.color-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+.ac11-article, .ac12-article, .ac13-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: left; /* ✅ ajouté */
+}
+
+.ac11-article,
+.ac12-article,
+.ac13-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: flex-start; /* ✅ Ajouté pour forcer l’alignement des enfants */
+}
+
+
+
+.download-container {
+  text-align: center; /* ✅ Centre le bouton horizontalement */
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+
+
+
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container.color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1.5rem;
+  flex: 1 1 45%;
+  max-width: 600px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  align-items: center; /* ✅ centre verticalement l’icône et le texte */
+  gap: 0.75rem;
+  width: 12rem;
+}
+
+article .icon {
+  flex-shrink: 0;
+  height: 2rem; /* ✅ garde la taille originale */
+  width: auto;   /* ou fixe à 2rem aussi si tu veux carré */
+}
+
+html, body {
+  overflow-x: hidden; /* ✅ empêche le scroll horizontal */
+  width: 100%;
+}
+
+
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+.ac12-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ac12-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 350px; /* C’est ce qui rend l’image ronde */
+}
+
+
+
+.normal-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.normal-img img {
+  border-radius: 0 !important;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.ac11-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ac11-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.ac13-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ac13-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.ac13-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0; /* Pour éviter l'effet arrondi par défaut */
+}
+
+
+
+
+
+
+
+/* ADMINNN */
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.carousel-images {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.carousel-image {
+  display: none;
+  position: relative;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flèches */
+.carousel-image label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+  border-radius: 5px;
+}
+
+.carousel-image .prev {
+  left: 10px;
+}
+
+.carousel-image .next {
+  right: 10px;
+}
+
+/* Affichage selon radio sélectionné */
+#img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#img4:checked ~ .carousel-images .carousel-image:nth-child(4) {
+  display: block;
+}
+
+.carousel-image label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Effet d’agrandissement au hover */
+.carousel-image label:hover {
+  transform: translateY(-50%) scale(1.2);
+  opacity: 1;
+}
+
+
+
+
+
+
+/* Structure générale */
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.carousel-images {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.carousel-image {
+  display: none;
+  position: relative;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flèches */
+.carousel-image label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-image label:hover {
+  transform: translateY(-50%) scale(1.2);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-image .prev {
+  left: 10px;
+}
+
+.carousel-image .next {
+  right: 10px;
+}
+
+/* Affichage conditionnel : carousel2 uniquement */
+#c2-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#c2-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#c2-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#c2-img4:checked ~ .carousel-images .carousel-image:nth-child(4),
+#c2-img5:checked ~ .carousel-images .carousel-image:nth-child(5) {
+  display: block;
+}
+
+/* Affichage des images selon le bouton radio sélectionné */
+#c3-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#c3-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#c3-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#c3-img4:checked ~ .carousel-images .carousel-image:nth-child(4),
+#c3-img5:checked ~ .carousel-images .carousel-image:nth-child(5) {
+  display: block;
+}
+
+/* Structure générale */
+.carousel-wrapper.carousel3 {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.carousel3 .carousel-images {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.carousel3 .carousel-image {
+  display: none;
+  position: relative;
+}
+
+.carousel3 .carousel-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+/* Flèches de navigation */
+.carousel3 .carousel-image label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel3 .carousel-image label:hover {
+  transform: translateY(-50%) scale(1.2);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel3 .carousel-image .prev {
+  left: 10px;
+}
+
+.carousel3 .carousel-image .next {
+  right: 10px;
+}
+
+
+
+#c4-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#c4-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#c4-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* PROGRAMMATION */
+
+/* Images du carrousel */
+/* Images du carrousel - plus grandes */
+.progac2 .carousel-image img {
+  width: 90vw; /* plus large que 100% du conteneur local */
+  max-height: 80vh; /* pour limiter en hauteur si écran trop petit */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+
+/* Flèches de navigation */
+.progac2 .carousel-image label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.progac2 .carousel-image label:hover {
+  transform: translateY(-50%) scale(1.2);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.progac2 .carousel-image .prev {
+  left: 10px;
+}
+
+.progac2 .carousel-image .next {
+  right: 10px;
+}
+
+/* Masquer toutes les images par défaut */
+.progac2 .carousel-image {
+  display: none;
+  position: relative;
+}
+
+/* Affichage conditionnel selon le bouton radio */
+#progac2-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac2-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac2-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+.carousel-wrapper.progac2 {
+  max-width: 80vw;
+  margin: 2rem auto;
+}
+
+
+#progac22-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac22-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac22-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+#progac23-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac23-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac23-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#progac23-img4:checked ~ .carousel-images .carousel-image:nth-child(4) {
+  display: block;
+}
+
+
+#progac24-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac24-img2:checked ~ .carousel-images .carousel-image:nth-child(2) {
+  display: block;
+}
+
+
+#progac25-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac25-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac25-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+
+#progac41-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac41-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac41-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#progac41-img4:checked ~ .carousel-images .carousel-image:nth-child(4),
+#progac41-img5:checked ~ .carousel-images .carousel-image:nth-child(5),
+#progac41-img6:checked ~ .carousel-images .carousel-image:nth-child(6) {
+  display: block;
+}
+
+#progac42-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac42-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac42-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#progac42-img4:checked ~ .carousel-images .carousel-image:nth-child(4) {
+  display: block;
+}
+
+
+#progac51-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac51-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac51-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+
+/* CONNECT */
+
+/* Affichage conditionnel pour connect21 */
+#connect21-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#connect21-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#connect21-img3:checked ~ .carousel-images .carousel-image:nth-child(3) {
+  display: block;
+}
+
+
+
+/* Affichage conditionnel pour connect22 */
+#connect22-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#connect22-img2:checked ~ .carousel-images .carousel-image:nth-child(2) {
+  display: block;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.download-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+
+#connect31-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#connect31-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#connect31-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#connect31-img4:checked ~ .carousel-images .carousel-image:nth-child(4),
+#connect31-img5:checked ~ .carousel-images .carousel-image:nth-child(5),
+#connect31-img6:checked ~ .carousel-images .carousel-image:nth-child(6) {
+  display: block;
+}
+
+#progac43-img1:checked ~ .carousel-images .carousel-image:nth-child(1),
+#progac43-img2:checked ~ .carousel-images .carousel-image:nth-child(2),
+#progac43-img3:checked ~ .carousel-images .carousel-image:nth-child(3),
+#progac43-img4:checked ~ .carousel-images .carousel-image:nth-child(4) {
+  display: block;
+}
+
+
+
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  flex: 1 1 300px; /* Largeur minimale pour empiler si nécessaire */
+  max-width: 100%;
+  background: white;
+  border-radius: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.details-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+.experience-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.experience-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.project-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.sae-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sae-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+

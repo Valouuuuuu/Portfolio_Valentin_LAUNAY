@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UE 4 : Rapprocher - BUT 2 ROM</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .photo-block {
+      border: 3px dashed #2e86c1; background-color: #eaf4fb; color: #2e86c1;
+      padding: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; text-align: center;
+    }
+    .photo-block img {
+      width: 100%; max-width: 900px; display: block; margin: 0 auto; border-radius: 8px 8px 0 0;
+    }
+    .photo-block .photo-caption {
+      padding: 12px 20px; font-size: 0.95em; font-weight: bold; background: #d6eaf8;
+    }
+    .photo-block-placeholder {
+      border: 3px dashed #2e86c1; background-color: #eaf4fb; color: #2e86c1;
+      padding: 30px; text-align: center; margin: 20px 0; font-weight: bold;
+      font-size: 1.1em; border-radius: 10px;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">UE 4 : Rapprocher</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">BUT 1</a>
+        <div class="dropdown-content">
+          <a href="admin.html">UE 1 : Administrer</a>
+          <a href="connect.html">UE 2 : Connecter</a>
+          <a href="prog.html">UE 3 : Programmer</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">BUT 2</a>
+        <div class="dropdown-content">
+          <a href="but2admin.html">UE 1 : Administrer</a>
+          <a href="but2connect.html">UE 2 : Connecter</a>
+          <a href="but2prog.html">UE 3 : Programmer</a>
+          <a href="but2rapprocher.html">UE 4 : Rapprocher</a>
+          <a href="but2unifier.html">UE 5 : Unifier</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="experience">
+    <h1 class="title">Compétences pour l'UE 4 : Rapprocher (Option ROM)</h1>
+    <h2>Spécifique au parcours Réseaux Opérateurs et Multimédia — gestion des infrastructures opérateurs en 2ème année.</h2>
+    <div class="experience-details-container">
+      <div class="article-container ac11-container">
+
+        <!-- AC24.01ROM -->
+        <article class="ac11-article">
+          <h3>AC24.01ROM : Administrer les réseaux d'accès fixes et mobiles.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> Assurer la connexion finale de l'abonné au réseau de l'opérateur — le « dernier kilomètre » — est au cœur du métier ROM. Cette compétence recouvre aussi bien les technologies optiques que cuivrées qui constituent les réseaux d'accès fixes, ainsi que les architectures radio pour le mobile.</p>
+          <p>
+            Dans le cadre du module R3.07 « Réseaux d'accès », j'ai étudié en détail les deux grandes familles de technologies déployées sur le réseau d'accès fixe. Côté optique, j'ai analysé les architectures FTTx (Fiber To The Home, Building, Cabinet) reposant sur des équipements OLT (Optical Line Terminal) côté opérateur et des ONU/ONT côté abonné, interconnectés par des réseaux PON (Passive Optical Network) qui mutualisent la fibre sans équipements actifs intermédiaires. Côté cuivre, j'ai étudié le rôle du DSLAM (Digital Subscriber Line Access Multiplexer) dans l'agrégation des accès xDSL, en distinguant les différentes variantes (ADSL2+, VDSL2) selon la distance à la prise abonné.
+          </p>
+          <p>
+            La SAÉ 3.03 « LAN » a mis en pratique cette compétence : les routeurs de bordure CE-1 et CE-2 symbolisent les équipements de terminaison côté client, connectés à un réseau WAN opérateur via le segment 172.16.20.0/29, illustrant concrètement la frontière entre le réseau d'accès et le cœur de réseau de l'opérateur.
+          </p>
+
+          <div class="carousel-images">
+              <div class="carousel-image">
+                <img src="images/but2rapprocher/ac1.png" alt="Script Administration 1" onerror="this.parentElement.innerHTML='<div class=\'photo-block-placeholder\'>[ CAPTURE À AJOUTER : Script d\'automatisation router.py ou configuration initiale ]<br>Chemin : images/but2prog/ac1.1.png</div>'" />
+                <label for="progac42-img3" class="prev">&#10094;</label>
+                <label for="progac42-img2" class="next">&#10095;</label>
+              </div>
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.07 : Réseaux d'accès</li>
+              <li>SAÉ 3.03 : LAN</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- AC24.02ROM -->
+        <article class="ac11-article">
+          <h3>AC24.02ROM : Virtualiser des services réseaux.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> Les opérateurs remplacent progressivement le matériel dédié coûteux par des fonctions logicielles plus agiles — c'est le principe du NFV (Network Functions Virtualization). La maîtrise des outils de conteneurisation et d'orchestration est désormais incontournable dans ce domaine.</p>
+          <p>
+            Le module R4.ROM.09 « Outils DevOps » m'a permis de prendre en main les outils concrets de cette transformation. J'ai travaillé avec Docker pour créer, déployer et gérer des conteneurs applicatifs. Dans le cadre des TP Docker-compose (TP2), j'ai appris à décrire des stacks de services interconnectés via un fichier docker-compose.yaml, en définissant des dépendances entre services (clé depends_on), des volumes persistants et des variables d'environnement. J'ai ainsi déployé des piles complètes incluant un serveur web Apache/httpd, une base de données MySQL et une interface d'administration Adminer.
+          </p>
+          <p>
+            J'ai ensuite construit mes propres images Docker à l'aide de Dockerfiles personnalisés, en utilisant les instructions FROM, RUN, COPY, EXPOSE et CMD pour créer une image d'application Flask exposée sur le port 8080. Ces conteneurs incarnent directement le concept de NFV : ce sont des fonctions réseau ou applicatives entièrement logicielles, instanciables et configurables dynamiquement. Le TP3 Ansible a prolongé cette démarche en automatisant le déploiement de ces conteneurs Docker sur des hôtes distants via des playbooks YAML.
+          </p>
+
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R4.ROM.09 : Outils DevOps</li>
+              <li>SAÉ 3.02 : Développer des applications communicantes</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="ac11-article">
+          <h3>AC24.03ROM : Décrire et comprendre l'architecture et les offres des opérateurs.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> L'Internet mondial est un maillage complexe d'accords techniques et commerciaux articulé autour de réseaux d'accès, de collecte et de transport (backbone). Comprendre la topologie de ces infrastructures et les protocoles qui les régissent est indispensable pour appréhender les offres de connectivité des opérateurs.</p>
+          
+          <p>
+            Le module <strong>R3.02 « Réseaux opérateurs »</strong> m'a permis d'assimiler le fonctionnement du cœur de réseau et le routage inter-AS (Autonomous Systems). J'ai étudié le protocole de routage <strong>BGP (eBGP/iBGP)</strong>, basé sur un vecteur de chemin (path vector), qui permet aux opérateurs d'échanger des tables de routage globales ou partielles et d'appliquer des politiques de trafic complexes via la manipulation d'attributs (AS-Path, Local Preference, MED). J'ai également analysé et configuré l'architecture <strong>MPLS (MultiProtocol Label Switching)</strong> de niveau 2.5, qui substitue le routage IP traditionnel par une commutation rapide d'étiquettes grâce au protocole <strong>LDP (Label Distribution Protocol)</strong> et aux opérations de PUSH, SWAP et POP sur les routeurs de bordure (PE/LER) et de cœur (P/LSR). Pour répondre aux besoins d'interconnexion multi-site sécurisée des entreprises, j'ai mis en œuvre des offres <strong>MPLS-VPN de niveau 3</strong>. Ce service repose sur l'isolation des flux par des tables de routage virtuelles (<strong>VRF</strong>), l'unicité des préfixes via les Route Distinguishers (<strong>RD</strong>), le filtrage par Route Targets (<strong>RT</strong>), et l'échange de routes VPNv4 via l'extension <strong>MP-BGP</strong> en double étiquetage (label stacking).
+          </p>
+          
+          <p>
+            En complément, les modules <strong>R3.06 et R3.07</strong> m'ont apporté une maîtrise des infrastructures de la boucle locale d'accès (cuivre et optique). Côté fibre, j'ai étudié le déploiement des architectures <strong>FTTH, FTTB et FTTO</strong>, en cartographiant le réseau depuis le Nœud de Raccordement Optique (NRO) équipé d'<strong>OLT</strong> (Optical Line Termination) jusqu'à la Prise Terminale Optique (PTO/DTIO) de l'abonné. J'ai analysé l'offre de partage passif <strong>GPON</strong> (Gigabit Passive Optical Network), qui s'appuie sur des coupleurs optiques et un multiplexage en longueurs d'onde, utilisant une longueur d'onde de 1310 nanomètres pour le flux montant et une longueur d'onde de 1490 nanomètres pour le flux descendant. Pour l'accès cuivre historique, j'ai appréhendé l'infrastructure <strong>xDSL</strong> où le trafic de la paire torsadée est concentré par un <strong>DSLAM</strong> avant d'être encapsulé en <strong>PPPoE</strong> et configuré via <strong>IPCP</strong> vers le serveur d'accès large bande (B.A.S.) de l'opérateur. Enfin, j'ai été formé à la caractérisation et à la maintenance de ces liens optiques via l'inspection microscopique des connecteurs et la localisation des défauts (microcourbures, coupures) par photométrie et réflectométrie (<strong>OTDR</strong>).
+          </p>
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.02 : Réseaux opérateurs</li>
+              <li>R3.06 : Technologies des réseaux d'accès optiques</li>
+              <li>R3.07 : Technologies des réseaux d'accès cuivre et hauts débits</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- AC24.04ROM -->
+        <article class="ac11-article">
+          <h3>AC24.04ROM : Gérer le routage/commutation et les interconnexions.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> Interconnecter des opérateurs à l'échelle mondiale nécessite des protocoles de routage massifs et hautement robustes. BGP et MPLS constituent la colonne vertébrale technique de l'Internet et des réseaux opérateurs.</p>
+          <p>
+            Le module R3.02 m'a permis de mettre en œuvre des interconnexions de cœur de réseau. J'ai configuré le protocole BGP (Border Gateway Protocol) pour la gestion des annonces de routes entre différents Systèmes Autonomes, en travaillant sur les attributs AS-PATH, les préfixes annoncés et les politiques de routage (route-maps, filtrages). Ce contexte fait directement écho à l'architecture de la SAÉ 3.03, où les routeurs CE-1 et CE-2 jouent le rôle d'ASBR (Autonomous System Border Router) avec des routes statiques redistribuées vers le segment opérateur 172.16.20.0/29.
+          </p>
+          <p>
+            J'ai également étudié le transport de données via MPLS et la mise en place de VPN L2 et L3 pour segmenter et sécuriser le trafic des clients sur l'infrastructure mutualisée de l'opérateur. Le mécanisme de label switching MPLS, en dissociant le plan de contrôle du plan de données, permet d'assurer la séparation des flux clients tout en garantissant des performances élevées sur les liens de cœur.
+          </p>
+
+    
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.02 : Réseaux opérateurs</li>
+              <li>SAÉ 3.03 : LAN</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- AC24.05ROM -->
+        <article class="ac11-article">
+          <h3>AC24.05ROM : Automatiser la gestion des équipements réseaux.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> Face à des milliers de routeurs et commutateurs, la configuration manuelle n'est plus une option viable pour un opérateur. L'automatisation réseau est devenue une compétence fondamentale, à l'intersection de la programmation et de l'administration réseau.</p>
+          <p>
+            Le module R4.ROM.09 « Outils DevOps » m'a introduit à Ansible, l'outil d'automatisation de référence dans les environnements télécom. Dans le cadre du TP3, j'ai créé des fichiers d'inventaire en syntaxe YAML pour lister les équipements cibles (routeurs Cisco sur EVE-NG, machines Linux), puis rédigé des playbooks pour automatiser des tâches variées : déploiement d'un serveur web Nginx, installation et configuration d'Apache et MariaDB via des rôles Ansible réutilisables, et sauvegarde automatique de la running-config de routeurs IOS via le module ios_command. Pour ce dernier cas, le playbook collecte la configuration avec show running-config, la stocke dans une variable via register, puis la copie dans un fichier de sauvegarde nommé dynamiquement grâce à la variable magic inventory_hostname.
+          </p>
+          <p>
+            J'ai aussi configuré des équipements réseau Cisco directement depuis Ansible via le module ios_config, en définissant des parents (le mode de configuration IOS) et des lignes de commandes à appliquer — par exemple l'adressage IPv4 d'une interface ethernet ou la création d'un VLAN avec affectation de ports. Cette logique est directement transposable à la gestion industrielle de flottes d'équipements opérateurs.
+          </p>
+
+           <p style="margin-top: 15px;">
+            <a href="images/but2rapprocher/Compte-rendu-exercice-4-R409_Valentin_LAUNAY .pdf" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#2e86c1;color:#fff;border-radius:6px;font-weight:bold;text-decoration:none;">
+              Document qui contient un compte rendu d'une automatisation d'un routeur et switch via ansible.
+            </a>
+          </p>
+
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R4.05 : Automatisation des tâches d'administration</li>
+              <li>R4.ROM.09 : Outils DevOps</li>
+              <li>SAÉ 3.02 : Développer des applications communicantes</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 Valentin LAUNAY - Tous droits réservés</p>
+  </footer>
+</body>
+</html>

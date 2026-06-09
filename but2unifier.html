@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UE 5 : Unifier - BUT 2 ROM</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .photo-block {
+      border: 3px dashed #2e86c1; background-color: #eaf4fb; color: #2e86c1;
+      padding: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; text-align: center;
+    }
+    .photo-block img {
+      width: 100%; max-width: 900px; display: block; margin: 0 auto; border-radius: 8px 8px 0 0;
+    }
+    .photo-block .photo-caption {
+      padding: 12px 20px; font-size: 0.95em; font-weight: bold; background: #d6eaf8;
+    }
+    .photo-block-placeholder {
+      border: 3px dashed #2e86c1; background-color: #eaf4fb; color: #2e86c1;
+      padding: 30px; text-align: center; margin: 20px 0; font-weight: bold;
+      font-size: 1.1em; border-radius: 10px;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">UE 5 : Unifier</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">BUT 1</a>
+        <div class="dropdown-content">
+          <a href="admin.html">UE 1 : Administrer</a>
+          <a href="connect.html">UE 2 : Connecter</a>
+          <a href="prog.html">UE 3 : Programmer</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">BUT 2</a>
+        <div class="dropdown-content">
+          <a href="but2admin.html">UE 1 : Administrer</a>
+          <a href="but2connect.html">UE 2 : Connecter</a>
+          <a href="but2prog.html">UE 3 : Programmer</a>
+          <a href="but2rapprocher.html">UE 4 : Rapprocher</a>
+          <a href="but2unifier.html">UE 5 : Unifier</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="experience">
+    <h1 class="title">Compétences pour l'UE 5 : Unifier (Option ROM)</h1>
+    <h2>Mise en œuvre d'un système de téléphonie unifiée et multimédia pour l'entreprise.</h2>
+    <div class="experience-details-container">
+      <div class="article-container ac11-container">
+
+        <!-- AC25.01ROM -->
+        <article class="ac11-article">
+          <h3>AC25.01ROM : Choisir une architecture et déployer des services de ToIP.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> La voix sur IP a totalement remplacé la téléphonie analogique classique dans les entreprises modernes. Choisir la bonne architecture d'IPBX et savoir déployer les équipements terminaux appropriés est la compétence de base de tout technicien télécom.</p>
+          
+          <p>
+            La SAÉ 3.ROM.04 « Ingénierie ToIP Multi-sites » m'a demandé de concevoir et déployer un système téléphonique d'entreprise complet pour un cabinet médical fictif. J'ai installé et configuré un serveur Asterisk (IPBX open source) sur une machine Linux Debian, en activant le module PJSIP (Port and Address Independent Protocol for SIP) pour gérer l'enregistrement des terminaux. Le serveur Asterisk est positionné à l'adresse IP 10.242.30.20 et constitue le cœur du système.
+          </p>
+          
+          <p>
+            L'architecture retenue est multi-terminaux : un téléphone logiciel Linphone sur PC (IP 10.242.9.3) pour le praticien, un téléphone matériel Yealink T33P pour l'assistant et un téléphone matériel Nortel IP6812 pour la secrétaire. Une connexion vers le réseau téléphonique opérateur est assurée par un trunk SIP configuré vers un serveur opérateur voix simulé (IP 10.129.10.20). Cette architecture repose sur le protocole SIP pour la signalisation et RTP pour le transport audio, dont j'ai étudié le cycle de vie complet en analysant les échanges via Wireshark.
+          </p>
+
+          <p style="margin-top: 15px;">
+            <a href="images/but2unifier/SAE3.ROM.04.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#2e86c1;color:#fff;border-radius:6px;font-weight:bold;text-decoration:none;">
+              Compte rendu de la SAE 3.ROM.04
+            </a>
+          </p>
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.ROM.16 : Ingénierie de la téléphonie sur IP</li>
+              <li>SAÉ 3.ROM.04 : Ingénierie ToIP Multi-sites</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- AC25.02ROM -->
+        <article class="ac11-article">
+          <h3>AC25.02ROM : Administrer un service de téléphonie pour l'entreprise.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> Le gestionnaire télécoms doit garantir que chaque collaborateur peut joindre et être joint efficacement, en interne comme vers l'extérieur. Cela passe par une administration fine du serveur IPBX et la configuration de fonctionnalités avancées.</p>
+          <p>
+            Au sein de la SAÉ 3.ROM.04, j'ai administré en profondeur le serveur Asterisk à travers plusieurs niveaux de configuration. J'ai d'abord créé les trois extensions PJSIP dans le fichier pjsip_wizard.conf : Praticien (callerid=1), Assistant (callerid=2) et Secrétaire (callerid=3), chacune avec authentification par identifiant et mot de passe, transport UDP, codec alaw et un contexte de messagerie vocale associé. La commande pjsip show endpoints, puis pjsip show contacts, permet de vérifier que les trois téléphones sont bien enregistrés avec leur adresse IP et leur transport.
+          </p>
+          <p>
+            J'ai ensuite rédigé les dialplans dans extensions.conf pour couvrir l'ensemble des scénarios d'appel : appels internes entre les trois postes via Dial(PJSIP/Praticien) ou Dial(PJSIP/Assistant), appels externes sortants via le trunk opérateur voix avec le préfixe 0XXXXXXXXXX, appels inter-sites avec la notation **31 suivi du numéro interne de la table distante. Des fonctionnalités avancées ont également été configurées : transfert d'appel (TtW) activé dans le dialplan, groupes d'appel et interception (*8) définis dans pjsip_wizard.conf via les paramètres endpoint/call_group et endpoint/pickup_group, messagerie vocale avec boîtes numérotées (8001, 8002, 8003) et consultation directe par numérotation, prédécroché avec message de bienvenue lu par la secrétaire avant mise en relation, et un Serveur Vocal Interactif complet pour la prise de rendez-vous automatique couplé à Google Calendar via un Google Apps Script.
+          </p>
+          <p>
+            La notification des messages vocaux par e-mail a été configurée via msmtp, un relais SMTP léger pointant sur Gmail avec authentification par mot de passe d'application. Le fichier voicemail.conf définit le format d'envoi (wav49/gsm/wav), l'adresse expéditeur et le corps du message incluant la durée et l'identifiant de l'appelant.
+          </p>
+
+          <div class="video-container" style="margin: 20px 0; text-align: center;">
+            <video controls width="40%" style="max-width: 700px; border: 1px solid #ccc; border-radius: 4px;">
+              <source src="images/but2unifier/IMG_4165.MOV" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+            </video>
+          </div>
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.ROM.16 : Ingénierie de la téléphonie sur IP</li>
+              <li>SAÉ 3.ROM.04 : Ingénierie ToIP Multi-sites</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- AC25.03ROM -->
+        <article class="ac11-article">
+          <h3>AC25.03ROM : Mettre en place une politique de QoS pour les applications multimédia.</h3>
+          <p class="intro-critique"><strong>Introduction :</strong> La voix et la vidéo sont des flux temps-réel extrêmement sensibles aux délais, à la gigue et aux pertes de paquets. Le réseau doit les traiter en priorité absolue par rapport aux données classiques, ce qui nécessite une politique de Qualité de Service cohérente de bout en bout.</p>
+          <p>
+            Pour garantir une qualité audio optimale dans la SAÉ 3.ROM.04, j'ai configuré des politiques de Qualité de Service à plusieurs niveaux. Côté codec, le choix s'est porté sur alaw (G.711 A-Law), standard en Europe, défini dans pjsip_wizard.conf via le paramètre endpoint/allow=!all,alaw. Ce codec à débit constant de 64 kbit/s par appel est prévisible et compatible avec l'ensemble des équipements de la maquette, ce qui facilite le dimensionnement des files d'attente sur les équipements réseau.
+          </p>
+          <p>
+            Côté réseau, les flux RTP transportant l'audio entre les terminaux passent par les commutateurs Cisco de la maquette. J'ai étudié le marquage DSCP (Differentiated Services Code Point) des paquets RTP pour signaler leur priorité aux équipements de commutation et de routage intermédiaires. Sur les switch de la SAÉ 3.03, la même logique s'applique aux VLANs voix : ils bénéficient d'une file d'attente prioritaire pour minimiser la latence et la gigue.
+          </p>
+          <p>
+            En pratique, j'ai également déployé et testé le SVI (Serveur Vocal Interactif) de prise de rendez-vous automatique. Le dialplan MenuVocal enregistre la date et l'heure saisies par l'appelant, génère un code de confirmation aléatoire via Set(CODE=${RAND(1000,9999)}), puis appelle un Google Apps Script via une requête HTTPS pour vérifier la disponibilité dans Google Calendar et créer l'événement si le créneau est libre. La vérification de la qualité audio a été faite en testant les appels entre le Yealink T33P, le Nortel IP6812 et le softphone linphone dans différents contextes, et en analysant les statistiques RTP disponibles dans les traces Wireshark.
+          </p>
+
+          <p style="margin-top: 15px;">
+            <a href="images/but2unifier/SAE3.ROM.04.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#2e86c1;color:#fff;border-radius:6px;font-weight:bold;text-decoration:none;">
+              Compte rendu de la SAE 3.ROM.04
+            </a>
+          </p>
+
+          <div class="module-toggle-container">
+            <button onclick="toggleModules(this)">Voir les modules associés</button>
+            <ul class="module-list hidden">
+              <li>R3.01 : Réseaux de campus</li>
+              <li>R3.ROM.16 : Ingénierie de la téléphonie sur IP</li>
+              <li>SAÉ 3.ROM.04 : Ingénierie ToIP Multi-sites</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 Valentin LAUNAY - Tous droits réservés</p>
+  </footer>
+</body>
+</html>

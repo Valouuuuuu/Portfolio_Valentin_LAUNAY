@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      .preuve-placeholder {
+        border: 3px dashed #d9534f; background-color: #fdf2f2; color: #d9534f;
+        padding: 30px; text-align: center; margin: 20px 0; font-weight: bold;
+        font-size: 1.2em; border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Valentin LAUNAY</div>
+      <div>
+        <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropbtn">BUT 1</a>
+          <div class="dropdown-content">
+            <a href="admin.html">UE 1 : Administrer</a>
+            <a href="connect.html">UE 2 : Connecter</a>
+            <a href="prog.html">UE 3 : Programmer</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">BUT 2</a>
+          <div class="dropdown-content">
+            <a href="but2admin.html">UE 1 : Administrer</a>
+            <a href="but2connect.html">UE 2 : Connecter</a>
+            <a href="but2prog.html">UE 3 : Programmer</a>
+            <a href="but2rapprocher.html">UE 4 : Rapprocher</a>
+            <a href="but2unifier.html">UE 5 : Unifier</a>
+          </div>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Valentin LAUNAY</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Accueil</a></li>
+          
+          <li style="margin-top: 1rem; font-weight: bold; color: grey;">--- BUT 1 ---</li>
+          <li><a href="admin.html" onclick="toggleMenu()">UE 1 : Administrer</a></li>
+          <li><a href="connect.html" onclick="toggleMenu()">UE 2 : Connecter</a></li>
+          <li><a href="prog.html" onclick="toggleMenu()">UE 3 : Programmer</a></li>
+
+          <li style="margin-top: 1rem; font-weight: bold; color: grey;">--- BUT 2 ---</li>
+          <li><a href="but2admin.html" onclick="toggleMenu()">UE 1 : Administrer</a></li>
+          <li><a href="but2connect.html" onclick="toggleMenu()">UE 2 : Connecter</a></li>
+          <li><a href="but2prog.html" onclick="toggleMenu()">UE 3 : Programmer</a></li>
+          <li><a href="but2rapprocher.html" onclick="toggleMenu()">UE 4 : Rapprocher</a></li>
+          <li><a href="but2unifier.html" onclick="toggleMenu()">UE 5 : Unifier</a></li>
+          
+          <li style="margin-top: 1rem;"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Valentin LAUNAY profile picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Valentin LAUNAY</h1>
+        <p class="section__text__p2">Etudiant en 2ème année de BUT R&T Parcours Réseau d'Opérateur et Multimédia</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Valouuuuuu'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Compétences</h1>
+
+      <div class="experience-columns">
+        <div class="experience-column">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Language de programmation</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>HTML/CSS</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Python</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL</h3></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Systèmes d'exploitation Utilisés</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Windows 10/11</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Debian</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Kali Linux</h3></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-column">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Logiciel Utiliser</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Cisco Packet Tracer</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Wireshark</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>EVE-NG</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>GNS3</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Word</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Excel</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Powerpoint</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VirtualBox</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VMWare Workstation Player</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Asterisk</h3></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="but1-projects">
+
+      <h1 class="title" style="margin-top: 50px;">Projets BUT 1</h1>
+
+      <div class="ue-container">
+        <h2 class="ue-title">Unité d’enseignement : Administrer</h2>
+        <div class="sae-horizontal">
+          <a href="#sae102" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Administrer/SAE102-1.PNG" alt="SAE 1.02" class="project-img img-small" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.02 : S’initier aux réseaux informatiques</h2>
+              <div class="hover-description-below">
+                <p>Création d’une infrastructure réseau pour une petite entreprise, incluant un routeur, plusieurs commutateurs, et des postes clients organisés en VLAN. Déploiement du DHCP, du routage inter-VLAN et du protocole VTP.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#sae201" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/index/but1admin2.png" alt="SAE 2.01" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 2.01 : Construire un réseau</h2>
+              <div class="hover-description-below">
+                <p>Conception d'une infrastructure sur GNS3 avec routeurs, commutateurs, serveurs DHCP, FTP et web Apache. Mise en place de routage dynamique RIP, d'ACL et de port-security.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ue-container">
+        <h2 class="ue-title">Unité d’enseignement : Connecter</h2>
+        <div class="sae-horizontal">
+          <a href="#sae103" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Connecter/SAE1030.png" alt="SAE 1.03" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.03 : Mesurer et analyser des signaux</h2>
+              <div class="hover-description-below">
+                <p>Mise en place d'un réseau Wi-Fi avec routeur physique. Mesure de la couverture du signal, analyse de l'atténuation, et rédaction d'un rapport complet d'optimisation.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ue-container">
+        <h2 class="ue-title">Unité d’enseignement : Programmer</h2>
+        <div class="sae-horizontal">
+          <a href="#sae104" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/sae14-1.PNG" alt="SAE 1.04" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.04 : Se présenter sur Internet</h2>
+              <div class="hover-description-below">
+                <p>Création d'une page web personnelle en HTML/CSS, structurée et responsive.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#sae105" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/SAE_1.05_appli2.png" alt="SAE 1.05" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 1.05 : Traiter des données</h2>
+              <div class="hover-description-below">
+                <p>Développement d'un programme Python capable de lire, trier et analyser des fichiers CSV pour en extraire des statistiques.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#sae203" class="project-hover-card">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="images/Programmer/sae203-1.png" alt="SAE 2.03" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SAÉ 2.03 : Mettre en place une solution informatique</h2>
+              <div class="hover-description-below">
+                <p>Conception d'une application web Django (modèle MVC) avec base de données relationnelle et déploiement sous Linux.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+  <h1 class="title">Projets BUT 2 (Spécialité ROM)</h1>
+  <div class="ue-container">
+    <div class="sae-horizontal">
+
+      <div class="project-hover-card">
+        <div class="details-container color-container">
+          <img src="./images/but2admin/topologie_vrrp.png " alt="SAÉ 3.03" class="project-card-img" />
+          <h2 class="experience-sub-title project-title">SAÉ 3.03 : Architecture LAN Haute Disponibilité</h2>
+          <div class="hover-description-below">
+            <p>Conception d'un réseau d'entreprise multi-sites tolérant aux pannes. Mise en place d'une architecture redondée avec le protocole <strong>VRRP</strong> sur des commutateurs de distribution, sécurisation via Spanning-Tree (MST), et gestion des VLANs par VTPv3. Déploiement de services DHCP, DNS et routage OSPF vers l'opérateur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hover-card">
+        <div class="details-container color-container">
+          <img src="./images/index/priseelec.JPG" alt="SAÉ IoT" class="project-card-img" />
+          <h2 class="experience-sub-title project-title">SAÉ 3.01 : Prise Électrique WiFi</h2>
+          <div class="hover-description-below">
+            <p>Création d'une prise connectée reposant sur un microcontrôleur <strong>ESP8266</strong>. Conception de l'électronique sous EasyEDA, développement du code en C++ pour remonter les températures d'un capteur DS18B20 via le protocole <strong>MQTT</strong>, et pilotage à distance via une interface Web et mobile sécurisée.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hover-card">
+        <div class="details-container color-container">
+          <img src="./images/index/Capture d'écran 2026-06-09 182226.png" alt="SAÉ 3.02" class="project-card-img" />
+          <h2 class="experience-sub-title project-title">SAÉ 3.02 : Routage en Oignon (Python)</h2>
+          <div class="hover-description-below">
+            <p>Développement d'un système de communication anonyme (type Tor) entièrement en Python. Implémentation du multithreading, des sockets TCP/UDP, et d'un chiffrement asymétrique en couches. Utilisation d'une base de données <strong>MariaDB</strong> pour stocker les règles de routage et d'interfaces PyQt pour les clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hover-card">
+        <div class="details-container color-container">
+          <img src="./images/index/telephone.png" alt="SAÉ ToIP" class="project-card-img" />
+          <h2 class="experience-sub-title project-title">SAÉ 3.ROM.04 : Ingénierie ToIP Multi-sites</h2>
+          <div class="hover-description-below">
+            <p>Déploiement d'un système téléphonique sur <strong>Asterisk (PJSIP)</strong>. Configuration de téléphones Yealink, d'un Serveur Vocal Interactif (SVI) avec navigation DTMF, de la messagerie vocale par email, et synchronisation innovante avec l'API <strong>Google Calendar</strong> via des scripts Python et Google Apps Script.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:test@gmail.com">test@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Valentin LAUNAY. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

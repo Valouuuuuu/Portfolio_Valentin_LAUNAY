@@ -83,26 +83,23 @@
         <p class="section__text__p2">Etudiant en 2ème année de BUT R&T Parcours Réseau d'Opérateur et Multimédia</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-color-2 btn-wide"
             onclick="window.open('./assets/resume-example.pdf')"
           >
-            Download CV
+            Télécharger mon CV
+          </button>
+          <button
+            class="btn btn-color-1 btn-wide"
+            onclick="document.getElementById('but1-projects').scrollIntoView({behavior:'smooth'})"
+          >
+            Voir mes projets ↓
           </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Valouuuuuu'"
-          />
-        </div>
+      </div>
+
+      <div class="scroll-indicator" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})">
+        <div class="mouse"></div>
+        <span>Scroll</span>
       </div>
     </section>
 
@@ -112,58 +109,120 @@
       <div class="experience-columns">
         <div class="experience-column">
           <div class="details-container">
-            <h2 class="experience-sub-title">Language de programmation</h2>
+            <h2 class="experience-sub-title">Réseau &amp; Infrastructure</h2>
             <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>HTML/CSS</h3></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Python</h3></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>SQL</h3></div>
-              </article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Cisco Packet Tracer</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>GNS3</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>EVE-NG</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Wireshark</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>OSPF / RIP / BGP</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VLAN / VTP / VRRP</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Spanning-Tree</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>DHCP / DNS</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Asterisk / ToIP</h3></div></article>
             </div>
           </div>
 
           <div class="details-container">
-            <h2 class="experience-sub-title">Systèmes d'exploitation Utilisés</h2>
+            <h2 class="experience-sub-title">Langages de programmation</h2>
             <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Windows 10/11</h3></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Debian</h3></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Kali Linux</h3></div>
-              </article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Python</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>C++ (Arduino/ESP)</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>HTML / CSS</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>SQL / MariaDB</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Bash</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Django</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>PyQt</h3></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Systèmes d'exploitation</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Windows 10/11</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Debian</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Ubuntu</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Kali Linux</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VirtualBox</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VMware</h3></div></article>
             </div>
           </div>
         </div>
 
         <div class="experience-column">
           <div class="details-container">
-            <h2 class="experience-sub-title">Logiciel Utiliser</h2>
+            <h2 class="experience-sub-title">Cybersécurité</h2>
             <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Cisco Packet Tracer</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Wireshark</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>EVE-NG</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>GNS3</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Word</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Excel</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Powerpoint</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VirtualBox</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>VMWare Workstation Player</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Asterisk</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Burp Suite</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Nmap</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Metasploit</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Hydra</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Gobuster</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>John the Ripper</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Cryptographie</h3></div></article>
             </div>
           </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Outils &amp; IoT</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>ESP8266</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>MQTT</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>EasyEDA</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>MATLAB</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Git</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Office 365</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Google Apps Script</h3></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container cert-container">
+              <article class="cert-article">
+                <img src="./assets/checkmark.png" alt="Certification" class="icon" />
+                <div>
+                  <h3><a href="https://ibb.co/qF2yRtjr" target="_blank" rel="noopener">TryHackMe — Pre Security ↗</a></h3>
+                  <p>Fondamentaux de la cybersécurité : réseau, web, Linux &amp; Windows. Certificat consultable en ligne.</p>
+                </div>
+              </article>
+              <article class="cert-article">
+                <img src="./assets/checkmark.png" alt="Certification" class="icon" />
+                <div>
+                  <h3>Linphone — Client &amp; service SIP</h3>
+                  <p>Déploiement et configuration d'un client et d'un service de téléphonie SIP.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours">
+      <h1 class="title">Mon parcours</h1>
+      <h2 class="title-sub">De la découverte des réseaux à la spécialisation opérateur.</h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-date">2023</span>
+          <h3>BAC STI2D — Mention Bien</h3>
+          <p>Lycée Jean-Baptiste Schwilgué, Sélestat. Premières bases en sciences et technologies de l'industrie.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2023 — 2024</span>
+          <h3>BUT 1 MT2E — Université de Haute-Alsace, Colmar</h3>
+          <p>Métiers de la transition et de l'efficacité énergétique, puis réorientation assumée vers ma vraie passion : les réseaux.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2024 — 2025</span>
+          <h3>BUT 1 Réseaux &amp; Télécommunications — Colmar</h3>
+          <p>Fondamentaux : réseaux IP, systèmes Linux/Windows, programmation Python, premiers projets d'infrastructure.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">2025 — Aujourd'hui</span>
+          <h3>BUT 2 R&amp;T spécialité ROM + Alternance chez Orange</h3>
+          <p>Réseau d'Opérateur et Multimédia : haute disponibilité, ToIP, IoT. En parallèle, alternant <strong>Responsable Affaire Client chez Orange</strong> — le réseau côté opérateur, en conditions réelles.</p>
         </div>
       </div>
     </section>
@@ -309,26 +368,28 @@
   </section>
 
     <section id="contact">
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Me contacter</h1>
+      <p class="contact-intro">Un projet, une question technique ou envie d'échanger sur les réseaux ? Ma boîte mail est ouverte.</p>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <p><a href="mailto:test@gmail.com">test@gmail.com</a></p>
+          <p><a href="mailto:valentin.launay1@uha.fr">valentin.launay1@uha.fr</a></p>
         </div>
         <div class="contact-info-container">
           <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p><a href="https://github.com/Valouuuuuu" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/tryhackme.png" alt="TryHackMe icon" class="thm-logo" />
+          <p><a href="https://tryhackme.com/p/valentinlaunay" target="_blank" rel="noopener">TryHackMe</a></p>
         </div>
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-          <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
       <p>Copyright &#169; 2026 Valentin LAUNAY. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
